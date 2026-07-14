@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jyothibasu Pothuraju - AI & Machine Learning Developer. View interactive projects, skills profile, and experience history.">
+  <title>Jyothibasu Pothuraju | AI & ML Developer</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HTML5 Canvas for Animated High-Tech Grid Background -->
+  <canvas id="canvas-background"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="scanlines"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid ref-icon fa-terminal"></i> JYOTHIBASU<span>.IO</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Cyber Theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-welcome">Initialize Connection...</span>
+          <h1 class="hero-name glitch-text" id="hero-name" data-text="Jyothibasu Pothuraju">Jyothibasu Pothuraju</h1>
+          <div class="hero-title-container">
+            <span class="hero-title" id="typewriter"></span>
+          </div>
+          <p class="hero-desc" id="hero-bio">
+            Systems developer specialized in building secure, highly performant web applications.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="cyber-btn"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+            <a href="#projects" class="cyber-btn secondary"><i class="fa-solid fa-code"></i> View Projects</a>
+          </div>
+        </div>
+
+        <!-- Terminal Console Graphic -->
+        <div class="terminal-panel hero-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div></div>
+          </div>
+          <div class="terminal-body" id="terminal-content">
+            <div class="console-line">
+              <span class="console-prompt">visitor@jyothibasu:~$</span>
+              <span class="console-input">whoami</span>
+            </div>
+            <div class="console-line">
+              <span class="console-response success">Jyothibasu Pothuraju — B.Tech AI &amp; ML Student</span>
+            </div>
+            <div class="console-line">
+              <span class="console-prompt">visitor@jyothibasu:~$</span>
+              <span class="console-input" id="terminal-caret-input">explore --portfolio <span class="blink">_</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="scroll-reveal">
+      <div class="section-header">
+        <span class="section-subtitle">System Info</span>
+        <h2 class="section-title">About Core</h2>
+      </div>
+      <div class="about-container">
+        <div class="terminal-panel">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">About Me</div>
+            <div></div>
+          </div>
+          <div class="terminal-body">
+            <p class="about-bio" id="about-bio-text"></p>
+            <div style="margin-top: 2rem;">
+              <a href="#" id="resume-btn" class="cyber-btn" target="_blank" download="Jyothibasu_Pothuraju_Resume.pdf">
+                <i class="fa-solid fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-panel">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">Details</div>
+            <div></div>
+          </div>
+          <div class="terminal-body">
+            <ul class="about-details-list">
+              <li><strong>CODENAME:</strong> <span id="detail-name"></span></li>
+              <li><strong>LOCATION:</strong> <span>Hyderabad, Telangana, India</span></li>
+              <li><strong>STATUS:</strong> <span style="color: var(--accent-green);">Available for Projects</span></li>
+              <li><strong>EMAIL:</strong> <span id="detail-email"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="scroll-reveal">
+      <div class="section-header">
+        <span class="section-subtitle">Parameters</span>
+        <h2 class="section-title">Tech Capabilities</h2>
+      </div>
+      <div class="skills-grid" id="skills-container">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="scroll-reveal">
+      <div class="section-header">
+        <span class="section-subtitle">Archived Code</span>
+        <h2 class="section-title">Projects Directory</h2>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="scroll-reveal">
+      <div class="section-header">
+        <span class="section-subtitle">Establish Link</span>
+        <h2 class="section-title">Contact Uplink</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="terminal-panel contact-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">contact_nodes.log</div>
+            <div></div>
+          </div>
+          <div class="terminal-body contact-info">
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-method-details">
+                <h4>GMAIL</h4>
+                <a id="contact-email" href="#" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-method-details">
+                <h4>GITHUB</h4>
+                <a id="contact-github" href="#" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="contact-method-details">
+                <h4>LINKEDIN</h4>
+                <a id="contact-linkedin" href="#" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-method-details">
+                <h4>GEOLOCATION</h4>
+                <p>Hyderabad, Telangana, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="terminal-panel contact-form-panel">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">send_message</div>
+            <div></div>
+          </div>
+          <div class="terminal-body">
+            <form class="contact-form" id="contact-form" action="https://formsubmit.co/jyothibasupothuraju@gmail.com" method="POST">
+              <div class="form-group">
+                <label for="form-name">SOURCE_SENDER_NAME</label>
+                <input type="text" id="form-name" name="name" class="form-control" placeholder="Enter your identity..." required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">SMTP_REPLY_EMAIL</label>
+                <input type="email" id="form-email" name="email" class="form-control" placeholder="Enter routing email..." required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">YOUR MESSAGE</label>
+                <textarea id="form-message" name="message" class="form-control" placeholder="Type your message payload..." required></textarea>
+              </div>
+
+              <!-- FormSubmit.co configuration (no backend needed) -->
+              <input type="hidden" name="_subject" value="New message from your portfolio site">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              
+              <div id="form-status" class="form-status"></div>
+              
+              <button type="submit" class="cyber-btn"><i class="fa-solid fa-bolt"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Diagnostic Area -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-diagnostic">
+        SYSTEM DIAGNOSTICS: <span>SYS_SECURE</span> | <span>PORTFOLIO_ONLINE</span> | <span>PING: 14ms</span>
+      </div>
+      <div class="footer-socials">
+        <a href="#" id="social-github" target="_blank" aria-label="GitHub Portal"><i class="fa-brands fa-github"></i></a>
+        <a href="#" id="social-linkedin" target="_blank" aria-label="LinkedIn Network"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" id="social-twitter" target="_blank" aria-label="Twitter Uplink"><i class="fa-brands fa-twitter-bird"></i><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="footer-copyright">
+        &copy; <span id="footer-year">2026</span> <span id="footer-name">Jyothibasu Pothuraju</span>. All Rights Administered.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Logic Config + Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
