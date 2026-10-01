@@ -25,16 +25,16 @@ const CONFIG = {
     }
   },
   skills: [
-    { name: "Python", category: "Languages", level: 90 },
-    { name: "Java", category: "Languages", level: 70 },
-    { name: "C", category: "Languages", level: 92 },
-    { name: "JavaScript", category: "Languages", level: 75 },
-    { name: "HTML / CSS / JS", category: "Web Dev", level: 85 },
-    { name: "Maps API Integration", category: "Web Dev", level: 78 },
-    { name: "OpenCV / MediaPipe", category: "AI & ML", level: 82 },
-    { name: "AI-Powered Applications", category: "AI & ML", level: 80 },
-    { name: "Git / GitHub", category: "Tools", level: 85 },
-    { name: "VS Code", category: "Tools", level: 90 }
+    { name: "Python", category: "Languages" },
+    { name: "Java", category: "Languages"},
+    { name: "C", category: "Languages" },
+    { name: "JavaScript", category: "Languages" },
+    { name: "HTML / CSS / JS", category: "Web Dev" },
+    { name: "Maps API Integration", category: "Web Dev" },
+    { name: "OpenCV / MediaPipe", category: "AI & ML" },
+    { name: "AI-Powered Applications", category: "AI & ML" },
+    { name: "Git / GitHub", category: "Tools" },
+    { name: "VS Code", category: "Tools" }
   ],
   projects: [
     {
